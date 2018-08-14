@@ -1,2 +1,2 @@
-# topfeed-bin
+# topfeed-cli
 topfeed developer tool
