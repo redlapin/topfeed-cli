@@ -1,0 +1,44 @@
+{
+   "name": "topfeed-cli",
+  "description": "topfeed developer tool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TopFeed/topfeed-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/TopFeed/topfeed-cli/issues"
+  },
+  "homepage": "https://github.com/TopFeed/topfeed-cli#readme",
+  "scripts": {
+    "lint": "eslint . --cache --fix",
+    "pretest": "npm run lint",
+    "precommit": "lint-staged",
+    "format": "prettier --write '**/*.{js,css,md}'",
+    "posttest": "npm run format"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.2",
+    "prettier": "^1.14.2"
+  },
+  "license": "MIT",
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{js,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": ">=6.9"
+  }
+}
