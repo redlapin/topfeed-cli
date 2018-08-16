@@ -1,9 +1,11 @@
 {
-   "name": "topfeed-cli",
+  "name": "topfeed-cli",
   "description": "topfeed developer tool",
   "version": "1.0.0",
   "main": "index.js",
-  "dependencies": {},
+  "bin": {
+    "topfeed": "bin/cli.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TopFeed/topfeed-cli.git"
@@ -40,5 +42,16 @@
   },
   "engines": {
     "node": ">=6.9"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "commander": "^2.17.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "react-loadable": "^5.5.0",
+    "webpack-manifest-plugin": "^2.0.3",
+    "webpack-merge": "^4.1.4",
+    "webpack-node-externals": "^1.7.2",
+    "write-file-webpack-plugin": "^4.3.2"
   }
 }
