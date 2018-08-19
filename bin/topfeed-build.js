@@ -19,8 +19,7 @@ commander
 		}]`
 	)
 	.option("-e, --env <env>", "development | production")
-	.option("-t, --target <target>", "browser|node")
-	.option("-m, --mode <mode>", "ssr")
+	.option("-t, --target <target>", "browser|node|ssr")
 	.parse(process.argv);
 const configFilePath = path.resolve(
 	process.cwd(),
