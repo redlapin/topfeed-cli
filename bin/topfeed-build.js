@@ -54,8 +54,8 @@ buildTool.build(
 				stats.toString({
 					moudles: false,
 					chunks: false,
-					children: false,
-					colors: false
+					children: true,
+					colors: true
 				})
 			);
 			return;
