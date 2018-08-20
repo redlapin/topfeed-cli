@@ -1,8 +1,7 @@
 {
-  "name": "topfeed-cli",
-  "description": "topfeed developer tool",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "@topfeed/topfeed-cli",
+  "description": "topfeed cli",
+  "version": "0.0.2",
   "bin": {
     "topfeed": "bin/topfeed.js"
   },
