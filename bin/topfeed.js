@@ -8,4 +8,5 @@ commander
 	.usage("<command> [options]")
 	.command("build", "build project")
 	.command("dev", "dev")
+	.command("init", "init project")
 	.parse(process.argv);
