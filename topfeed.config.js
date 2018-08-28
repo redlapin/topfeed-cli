@@ -1,7 +1,9 @@
 // @ts-check
 const path = require("path");
+const root = process.cwd();
 module.exports = {
-	port: 4001,
+	client_port: 4002,
+	server_port: 3333,
 	outputPath: path.resolve(__dirname, "dist"),
 	configureWebpack: ({ buildTarget }) => {
 		return {
@@ -12,5 +14,10 @@ module.exports = {
 				publicPath: "/static/"
 			}
 		};
+	},
+	font: {
+		input: path.resolve(root, "client/assets/svg"),
+		output: path.resolve(root, "client/assets/fonts"),
+		fontName: "i18nfont"
 	}
 };

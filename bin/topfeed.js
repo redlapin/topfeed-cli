@@ -9,4 +9,7 @@ commander
 	.command("build", "build project")
 	.command("dev", "dev")
 	.command("init", "init project")
+	.command("i18n", "download i18n translations")
+	.command("font", "build and preview font")
+	.command("scm", "generate scm setting for you")
 	.parse(process.argv);
