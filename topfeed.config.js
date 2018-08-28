@@ -22,7 +22,7 @@ module.exports = {
 	},
 	i18n: {
 		project: "1",
-		output: path.resolve(root, "server/locales"),
+		output: path.resolve(root, "server/locales/langs"),
 		draft: false,
 		whitelist: ["ko", "ja"]
 	}
