@@ -2,19 +2,10 @@
 "use strict";
 const generateFont = require("icon2font");
 const path = require("path");
-const CONSTANT = require("../lib/constant");
 const Util = require("../lib/util");
 const opener = require("opener");
 
 const commander = require("commander");
-commander
-	.usage("[options]")
-	.option(
-		"-c, --config <path>",
-		`set topfeed's config file [default: ./${
-			CONSTANT.DEFAULT_CONFIG_FILE_NAME
-		}]`
-	);
 const defaultConfig = require("../lib/default.config").font;
 const customConfig = Util.getConfigFile(commander.config).font;
 const config = Object.assign({}, defaultConfig, customConfig);

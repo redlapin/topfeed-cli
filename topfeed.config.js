@@ -19,5 +19,10 @@ module.exports = {
 		input: path.resolve(root, "client/assets/svg"),
 		output: path.resolve(root, "client/assets/fonts"),
 		fontName: "i18nfont"
+	},
+	i18n: {
+		project: "1",
+		output: path.resolve(root, "server/locales"),
+		draft: false
 	}
 };
