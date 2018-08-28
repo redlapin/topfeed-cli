@@ -4,14 +4,14 @@
 const commander = require("commander");
 const Util = require("../lib/util");
 const download = require("../lib/i18n");
-
-const defaultConfig = require("../lib/default.config").poly;
-const customConfig = Util.getConfigFile(config.config).poly;
+const defaultConfig = require("../lib/default.config").i18n;
+const customConfig = Util.getConfigFile().i18n;
 const config = Object.assign({}, defaultConfig, customConfig);
 commander
 	.command("download")
-	.description("build font")
-	.action(function build() {
-		console.log("generate:");
+	.description("download translations")
+	.action(function() {
+		console.log("config:", config);
 		download(config);
 	});
+commander.parse(process.argv);
