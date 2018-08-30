@@ -16,10 +16,8 @@
   },
   "homepage": "https://github.com/TopFeed/topfeed-cli#readme",
   "scripts": {
-    "build:ssr": "./bin/topfeed.js build --env production --target ssr",
-    "dev:ssr": "./bin/topfeed.js dev --target browser",
-    "build:browser": "./bin/topfeed.js build --env production  --target browser",
-    "build:node": "./bin/topfeed.js build --env production --target node",
+    "client:dev": "topfeed dev --target ssr",
+		"client:build": "topfeed build --env production --target browser",
     "dev:browser": "./bin/topfeed.js dev --target browser",
     "dev:node": "./bin/topfeed.js dev --target browser",
     "lint": "eslint . --cache --fix",
