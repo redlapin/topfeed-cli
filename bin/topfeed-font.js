@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 "use strict";
-const generateFont = require("icon2font2");
+const generateFont = require("icon2font");
 const path = require("path");
 const Util = require("../lib/util");
 const opener = require("opener");
