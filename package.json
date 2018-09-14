@@ -29,6 +29,7 @@
     "posttest": "npm run format"
   },
   "devDependencies": {
+    "@topfeed/topfeed": "0.0.29",
     "@types/react": "^16.4.14",
     "eslint": "^5.3.0",
     "husky": "^0.14.3",
