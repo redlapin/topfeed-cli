@@ -11,7 +11,6 @@ commander
 	.command("download")
 	.description("download translations")
 	.action(function() {
-		console.log("config:", config);
 		download(config);
 	});
 commander.parse(process.argv);

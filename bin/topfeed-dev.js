@@ -7,6 +7,7 @@ const chalk = require("chalk");
 const logger = require("../lib/logger");
 const buildTool = require("../lib/webpack-build");
 const CONSTANT = require("../lib/constant");
+const defaultConfig = require("../lib/default.config");
 
 commander
 	.usage("[options]")
@@ -23,7 +24,7 @@ const configFilePath = path.resolve(
 	process.cwd(),
 	commander.config || `./${CONSTANT.DEFAULT_CONFIG_FILE_NAME}`
 );
-const config = require(configFilePath);
+const config = Object.assign(defaultConfig, require(configFilePath));
 const buildEnv = commander.env || CONSTANT.DEFAULT_ENV;
 const buildTarget = commander.target || CONSTANT.DEFAULT_TARGET;
 process.env.NODE_ENV = buildEnv;
