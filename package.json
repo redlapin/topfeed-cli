@@ -31,6 +31,7 @@
   "devDependencies": {
     "@topfeed/topfeed": "0.0.29",
     "@types/react": "^16.4.14",
+    "colors": "^1.3.2",
     "eslint": "^5.3.0",
     "husky": "^0.14.3",
     "lint-staged": "^7.2.2",
@@ -79,6 +80,7 @@
     "@babel/preset-typescript": "^7.0.0",
     "@babel/register": "^7.0.0",
     "@babel/runtime": "^7.0.0",
+    "@rematch/core": "^1.0.6",
     "babel-loader": "^8.0.0",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-dynamic-import-node": "^2.0.0",
@@ -87,7 +89,6 @@
     "babel-plugin-transform-require-ignore": "^0.1.1",
     "chalk": "^2.4.1",
     "clean-webpack-plugin": "^0.1.19",
-    "colors": "^1.3.2",
     "commander": "^2.17.1",
     "compressing": "^1.3.0",
     "copy-template-dir": "^1.4.0",
@@ -117,6 +118,7 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.21.0",
     "ts-loader": "^3.5.0",
+    "url-loader": "^1.1.2",
     "urllib": "^2.29.1",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0",
@@ -127,6 +129,6 @@
     "webpack-merge": "^4.1.2",
     "webpack-node-externals": "^1.7.2",
     "webpack-serve": "^2.0.2",
-    "write-file-webpack-plugin": "^4.3.2"
+    "write-file-webpack-plugin": "^4.4.1"
   }
 }
